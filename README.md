@@ -1,19 +1,18 @@
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 #### git
-> A git aliases plugin for [Oh My Fish][omf-link] based loosely on the
+> A git aliases plugin for [Fisher][fisher-link] based loosely on the
 [Oh My Zsh Git Plugin][omz-git-plugin].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
 ## Install
 
 ```fish
-$ fisher install patrickfatrick/plugin-git
+$ fisher install patrickfatrick/gitfisher
 ```
 
 
@@ -49,7 +48,7 @@ $ fisher install patrickfatrick/plugin-git
 | ------------ | ---------------------------------------------------- |
 | gco          | `git checkout`                                       |
 | gcod         | `git checkout develop`                               |
-| gcom         | `git checkout master`                                |
+| gcm          | `git checkout master`                                |
 | gcb          | `git checkout -b`                                    |
 
 ### Commit
@@ -65,7 +64,7 @@ $ fisher install patrickfatrick/plugin-git
 | gcv          | `git commit -v --no-verify`                          |
 | gcav         | `git commit -a -v --no-verify`                       |
 | gcav!        | `git commit -a -v --no-verify --amend`               |
-| gcm          | `git commit -m`                                      |
+| gcmsg        | `git commit -m`                                      |
 | gcam         | `git commit -a -m`                                   |
 | gscam        | `git commit -S -a -m`                                |
 | gcfx         | `git commit --fixup`                                 |
@@ -241,16 +240,20 @@ $ fisher install patrickfatrick/plugin-git
 | gswc         | `git switch --create`                                       |
 | gunignore    | `git update-index --no-assume-unchanged`                    |
 
+# Credits
+
+This project was forked from [an Oh-My-Fish plugin][plugin-git-link] by [James Hillyerd][original-author]. For the most part this has only been changed to make it usable with Fisher, however some aliases have also been changed to be more in line with Oh-My-Zsh's plugin (eg. `gcm` and `gcmsg`). 
 
 # License
 
-[MIT][mit] © [James Hillyerd][author] et [al][contributors]
+[MIT][mit] © [Patrick Fricano][author], [James Hillyerd][original-author], et [al][contributors]
 
+[mit]:              https://opensource.org/licenses/MIT
+[author]:           https://github.com/patrickfatrick
+[original-author]:  https://github.com/jhillyerd
+[contributors]:     https://github.com/patrickfatrick/gitfisher/graphs/contributors
+[fisher-link]:      https://github.com/jorgebucaran/fisher
+[plugin-git-link]:  https://github.com/jhillyerd/plugin-git
 
-[mit]:            https://opensource.org/licenses/MIT
-[author]:         https://github.com/jhillyerd
-[contributors]:   https://github.com/jhillyerd/plugin-git/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
-
-[license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
-[omz-git-plugin]: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
+[license-badge]:    https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
+[omz-git-plugin]:   https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git
