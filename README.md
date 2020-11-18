@@ -13,7 +13,7 @@
 ## Install
 
 ```fish
-$ omf install https://github.com/jhillyerd/plugin-git
+$ fisher install patrickfatrick/plugin-git
 ```
 
 
