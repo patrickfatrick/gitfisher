@@ -89,7 +89,6 @@ __gitfish_create_abbr glods      git log --graph --pretty='%Cred%h%Creset -%C(au
 __gitfish_create_abbr glola      git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all
 __gitfish_create_abbr glog       git log --oneline --decorate --graph
 __gitfish_create_abbr gloga      git log --oneline --decorate --graph --all
-__gitfish_create_abbr glp        git log --pretty=<format>
 __gitfish_create_abbr gm         git merge
 __gitfish_create_abbr gmom       git merge origin/master
 __gitfish_create_abbr gmt        git mergetool --no-prompt
