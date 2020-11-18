@@ -65,7 +65,7 @@ function __gitfish_init
   __gitfish_create_abbr gds        git diff --staged
   __gitfish_create_abbr gdw        git diff --word-diff
   __gitfish_create_abbr gf         git fetch
-  __gitfish_create_abbr gfa        git fetch --all --prune
+  __gitfish_create_abbr gfa        git fetch --all --prune --jobs=10
   __gitfish_create_abbr gfo        git fetch origin
   __gitfish_create_abbr gg         git gui citool
   __gitfish_create_abbr gga        git gui citool --amend
@@ -130,7 +130,6 @@ function __gitfish_init
   __gitfish_create_abbr gss        git status -s
   __gitfish_create_abbr gst        git status
   __gitfish_create_abbr gsta       git stash push
-  __gitfish_create_abbr gsta       git stash save
   __gitfish_create_abbr gstaa      git stash apply
   __gitfish_create_abbr gstc       git stash clear
   __gitfish_create_abbr gstd       git stash drop
