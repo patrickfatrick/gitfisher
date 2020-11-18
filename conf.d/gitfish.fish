@@ -66,13 +66,11 @@ __gitfish_create_abbr gds        git diff --staged
 __gitfish_create_abbr gdw        git diff --word-diff
 __gitfish_create_abbr gf         git fetch
 __gitfish_create_abbr gfa        git fetch --all --prune
-__gitfish_create_abbr gfg        'git ls-files | grep'
 __gitfish_create_abbr gfo        git fetch origin
 __gitfish_create_abbr gg         git gui citool
 __gitfish_create_abbr gga        git gui citool --amend
 __gitfish_create_abbr ghh        git help
 __gitfish_create_abbr gignore    git update-index --assume-unchanged
-__gitfish_create_abbr gignored   'git ls-files -v | grep "^[[:lower:]]"'
 __gitfish_create_abbr gk         gitk --all --branches
 __gitfish_create_abbr gke        gitk --all (git log -g --pretty=%h)
 __gitfish_create_abbr gl         git pull
@@ -145,7 +143,6 @@ __gitfish_create_abbr gsu        git submodule update
 __gitfish_create_abbr gsw        git switch
 __gitfish_create_abbr gswc       git switch -c
 __gitfish_create_abbr gts        git tag -s
-__gitfish_create_abbr gtv        'git tag | sort -V'
 __gitfish_create_abbr gunignore  git update-index --no-assume-unchanged
 __gitfish_create_abbr gup        git pull --rebase
 __gitfish_create_abbr gupv       git pull --rebase -v
