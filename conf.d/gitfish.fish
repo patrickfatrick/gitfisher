@@ -14,7 +14,6 @@ function __gitfish_init
 
   set -U __git_plugin_abbreviations
 
-  # git abbreviations
   __gitfish_create_abbr g          git
   __gitfish_create_abbr ga         git add
   __gitfish_create_abbr gaa        git add --all
