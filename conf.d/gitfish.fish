@@ -176,8 +176,7 @@ function $install_event --on-event $install_event
 end
 
 function $update_event --on-event $update_event
-  __gitfish_destroy
-  __gitfish_init
+  __gitfish_destroy; and __gitfish_init
 end
 
 function $uninstall_event --on-event $uninstall_event
