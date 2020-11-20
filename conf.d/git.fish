@@ -3,7 +3,6 @@ set -l install_event (echo $event_name_base)_install
 set -l update_event (echo $event_name_base)_update
 set -l uninstall_event (echo $event_name_base)_uninstall
 
-echo "initing git"
 __git.init
 
 
