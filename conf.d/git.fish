@@ -5,13 +5,12 @@ set -l uninstall_event (echo $event_name_base)_uninstall
 
 __git.init
 
-
 function $install_event --on-event $install_event
   __git.init
 end
 
 function $update_event --on-event $update_event
-  __git.destroy; and __git.init
+  __git.reset
 end
 
 function $uninstall_event --on-event $uninstall_event
