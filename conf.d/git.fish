@@ -1,4 +1,4 @@
-set -l git
+set -l event_base_name git
 set -l install_event (echo $event_name_base)_install
 set -l update_event (echo $event_name_base)_update
 set -l uninstall_event (echo $event_name_base)_uninstall
